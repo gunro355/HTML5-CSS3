@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isxmas" checked value="M"> <label for="isxmas">Masculino</label> <br>
+            <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label> <br>
+            <!--Todos os input's do tipo radio tem que ter o mesmo name para que funcione, o id tem que ser diferennte para que funcione-->
+            <!--O input radio é basicamente uma multipla escolha, bom para demonstrar sexo-->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label>  <br>
+            <input type="checkbox" name="esbas" id="iesbas"> <label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="esju" id="iesju" checked> <label for="iesju">Judô</label> <br>
+            <input type="checkbox" name="esnat" id="iesnat" checked> <label for="iesnat">Natação</label> <br>
+            <input type="checkbox" name="est" id="iest"> <label for="iest">Tênis</label> <br>
+            <input type="checkbox" name="eshand" id="ieshand"> <label for="ieshand">Handebol</label> <br>
+            <input type="checkbox" name="esfuts" id="iesfuts"> <label for="iesfuts">Futsal</label> <br>
+            <!--Tenha cuidado para não colocar o id de um, no label de outro, se isso acontecer, da ruim-->
+            <!--O input checkbox funciona como uma checklist-->
+
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
